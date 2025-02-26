@@ -1,3 +1,9 @@
+"use client"
+// import { useCount } from "@/context"
+import { dataStore } from "@/store/dataStore"
+
 export default function About () {
-    return <div>About Page</div>
+    const { count, inc } = dataStore()
+    return <div><h1>About Page</h1>
+    <button onClick={() => inc()}>Count ++</button></div>
 }

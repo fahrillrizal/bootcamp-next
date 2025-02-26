@@ -1,7 +1,13 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
+// import { useCount } from "@/context";
+import { dataStore } from "@/store/dataStore";
 
 export default function Home() {
+  const { count, inc } = dataStore()
+  // const { count, setCount } = useCount()
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -44,6 +50,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <button onClick={() => inc()}>Count ++ </button>
       </main>
       <footer className={styles.footer}>
         <a
