@@ -1,8 +1,11 @@
 /app-route/node_modules/
+/mini-project/node_modules/
 /page-route/node_modules/
 /app-route/.next/
+/mini-project/.next/
 /page-route/.next/
 /app-route/out/
+/mini-project/out/
 /page-route/out/
 
 /.pnp
